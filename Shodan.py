@@ -1,11 +1,12 @@
-﻿import requests
+import os
+import requests
 import shodan
 
 def sd():
 
     scanShodan = (input("Usando Shodan: "))
 
-    chaveShodan = shodan.Shodan(key="SUA_CHAVE")
+    chaveShodan = shodan.Shodan(key = os.environ["SHODAN_API_KEY"])
     info_ip = chaveShodan.host(scanShodan)
 
     print(f"Organização: {info_ip.get('org')}")
