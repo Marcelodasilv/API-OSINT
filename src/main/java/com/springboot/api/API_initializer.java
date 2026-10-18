@@ -1,0 +1,9 @@
+package com.springboot.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class API_initializer {
+
+	public static void main(String[] args) {SpringApplication.run(API_initializer.class, args);}}
